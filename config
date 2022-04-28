@@ -1,0 +1,24 @@
+Host *
+ForwardAgent yes
+StrictHostKeyChecking no
+UserKnownHostsFile=/dev/null
+IdentityFile ~/.ssh/id_rsa
+
+Host github.comcastcom
+  HostName github.comcast.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa_gh
+
+Host 10.146.23.127
+  HostName 10.146.23.127
+  User root
+
+Host netbox
+  HostName 10.54.247.237
+  User root
+
